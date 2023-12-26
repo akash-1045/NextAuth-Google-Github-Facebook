@@ -1,6 +1,6 @@
 
 
-<img src='/homepage.png' width=1028 height=412>
+<img src='public/homepage.png' width=1028 height=420>
 
 
 
