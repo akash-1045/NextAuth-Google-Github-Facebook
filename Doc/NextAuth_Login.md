@@ -2,7 +2,7 @@
 # Google, Facebook, Github Authentication in NEXT JS
 
 ![Homepage](./Images/homepage.png)
-
+<!-- <img src="./Images/homepage.png" alt="Homepage" width="100%" height="600"> -->
 
 
 - NextAuth.js, a dynamic open-source authentication library, is your go-to tool for seamlessly integrating authentication and authorization features into your Next.js applications. Tailored for customization, it supports a range of functionalities from email and passwordless authentication to diverse authentication providers like Google and GitHub.
@@ -74,6 +74,7 @@ cd Next-Authentication.
 - Open your browser and navigate to [http://localhost:3000](http://localhost:3000/). This should be the expected result.
 
 ![Homepage](./Images/home.png)
+<!-- <img src="./Images/home.png" alt="Homepage" width="100%" height="600"> -->
 
 ## **Step 7: Integrate NextAuth in Our Next.js Application**
 
@@ -192,7 +193,7 @@ npm install next-auth
 
 # **Step 9: Setup Credentials**
 
-### **1.  Enlist Your Next.js App with Google Developer Console and Acquire OAuth Credentials**
+## **1.  Enlist Your Next.js App with Google Developer Console and Acquire OAuth Credentials**
 
 ---
 
@@ -202,62 +203,64 @@ npm install next-auth
 
 #### **Step 2: Create a New Project**
 
-- Click on the project dropdown at the top of the page, and then click on "New Project."
-- Enter a name for your project (e.g., "My Next.js App") and click "Create."
+- Click on the project dropdown at the top of the page, and then **click on "New Project."**
+- Enter a name for your project (e.g., "My Next.js App") and **click "Create."**
 
 #### **Step 3: Create OAuth Client ID**
 
-- In the left sidebar, click on "APIs & Services" > "Credentials."
-- Click on "Create Credentials" and select "OAuth client ID."
+- In the left sidebar, click on **"APIs & Services" > "Credentials."**
+- **Click on "Create Credentials"** and **select "OAuth client ID."**
 
 ![OAuth Client ID](./Images/gcp-1.png)
-<!-- <img src="./Images/gcp-1.png" alt="OAuth Client ID" width="100%" height="210" > -->
+<!-- <img src="./Images/gcp-1.png" alt="OAuth Client ID" width="800" height="300" > -->
 
-- Choose "Web application" as the application type.
+- Choose **"Web application"** as the application type.
 - Enter a name for your OAuth client ID.
-- Authorized JavaScript origins:  `http://localhost:3000`
-- Authorized redirect URIs: `http://localhost:3000/api/auth/callback/google`
-- Click "Create" to generate the OAuth client ID.
+- Authorized JavaScript origins:  **`http://localhost:3000`**
+- Authorized redirect URIs: **`http://localhost:3000/api/auth/callback/google`**
+- **Click "Create"** to generate the OAuth client ID.
 
 ![GCP OAuth Img](./Images/gcp-2.png) 
+<!-- <img src="./Images/gcp-2.png" alt="OAuth Client ID" width="800" height="600" > -->
 
 #### **Step 4: Retrieve OAuth Credentials**
 
 - Once created, you'll see your OAuth client ID and client secret. Make a note of these credentials.
 
 
-### **2. Configure OAuth Credentials with GitHub for Seamless Integration**
+## **2. Configure OAuth Credentials with GitHub for Seamless Integration**
 
 ---
 
-- Open your web browser and go to the GitHub [application page](https://github.com/settings/applications/new).
-- Authorized Homepage URL: `http://localhost:3000`
-- Authorized callback URI: `http://localhost:3000/api/auth/callback/github`
-- Enter your information and click on Register application.
+- Open your web browser and go to the GitHub [**application page**](https://github.com/settings/applications/new).
+- Authorized Homepage URL: **`http://localhost:3000`**
+- Authorized callback URI: **`http://localhost:3000/api/auth/callback/github`**
+- Enter your information and **click on Register application**.
 
 ![Github OAuth](./Images/github-1.png)
+<!-- <img src="./Images/github-1.png" alt="Github OAuth" width="90%" height="600"> -->
 
-- Next, Generate a new client secret and save both the client ID and client secret somewhere secure.
+- Next, Generate a **new client secret** and save both the client ID and client secret somewhere secure.
 
 ![Github Credentials](./Images/github-2.png)
 
-### **3. Enroll Your Next.js App on the Facebook Developer Console And Acquire OAuth Credentials**
+## **3. Enroll Your Next.js App on the Facebook Developer Console And Acquire OAuth Credentials**
 
 ---
 
 #### **Step 1: Create a Facebook App**
 
-- Go to the [Facebook Developer](https://developers.facebook.com/) website.
-- Click on "Log In" and log in with your Facebook account.
+- Go to the [**Facebook Developer**](https://developers.facebook.com/) website.
+- **Click on "Log In"** and log in with your Facebook account.
 
-For additional details, see the [Facebook login use case](https://developers.facebook.com/docs/development/create-an-app/facebook-login-use-case) documentation.
+For additional details, see the [**Facebook login use case**](https://developers.facebook.com/docs/development/create-an-app/facebook-login-use-case) documentation.
 
 #### **Step 2: Start the app creation process**
 
 There are a number of ways to create an app.
 
-- If you have just completed the signup process, click the Create First App button.
-- If you are on the [App Dashboard](https://developers.facebook.com/apps/), In the top right corner, click Create App.
+- If you have just completed the signup process, **click the Create First App button.**
+- If you are on the [**App Dashboard**](https://developers.facebook.com/apps/), In the top right corner, **click Create App.**
 
 ![Facebook-App-Img-1](./Images/Facebook-01.png)
 
@@ -266,8 +269,8 @@ There are a number of ways to create an app.
 
 #### **Step 3. Login Type**
 
-- You will be asked if you are building a game; select No and click Next.
-- If you are building a game and select Yes you will be taken through the [Facebook Login for Gaming use case app creation flow](https://developers.facebook.com/docs/development/create-an-app/facebook-login-for-games-use-case/#step-3)
+- You will be asked if you are building a game, **select No and click Next.**
+- If you are building a game and select Yes you will be taken through the [**Facebook Login for Gaming use case app creation flow**](https://developers.facebook.com/docs/development/create-an-app/facebook-login-for-games-use-case/#step-3)
 
 ![Facebook-App-Img-2](./Images/Facebook-02.png)
 
@@ -280,7 +283,7 @@ In this step you will add:
 
 Optionally, you can link this app to an existing Business Account using the dropdown menu, or you can add this later.
 
-Click Create App to save your app's details.
+**Click Create App to save your app's details**.
 
 ![Facebook-App-Img-3](./Images/Facebook-1.png)
 
@@ -292,25 +295,27 @@ Click Create App to save your app's details.
 
 When it comes to crafting a Test App of our existing application, you have various avenues to explore. Follow the steps below based on your scenario:
 
-- If you're currently on the dashboard of your existing app and wish to create a test app, head to the "Apps" section in the navbar. Look for the "Create Test App" button and give it a click.
-  - Select your existing app's 3-dot-drop-down list and click the Create Test App button.
-- If you are on an existing app's dashboard and wish to create a test app, pick the drop-down menu in the top left and then click the Create Test App option.
+- If you're currently on the dashboard of your existing app and wish to **create a test app**, head to the **"Apps" section in the navbar**. Look for the **"Create Test App"** button and give it a **click**.
+  - Select your existing app's **3-dot-drop-down** list and **click the Create Test App button.**
+- If you are on an existing app's dashboard and wish to **create a test app**, pick the **drop-down menu in the top left and then click the Create Test App option.**
 
-<!-- ![Facebook-App-Img-5](./Images/Facebook-3.png) -->
-<!-- ![Facebook-App-Img-6](./Images/Facebook-4.png) -->
-<img src="./Images/Facebook-3.png" alt="Facebook-App-Img-5" width="100%" height="300" >
+<!-- ![Facebook-App-Img-5](./Images/Facebook-3.png)
+![Facebook-App-Img-6](./Images/Facebook-4.png) -->
+<img src="./Images/Facebook-3.png" alt="Facebook-App-Img-5" width="600" height="300" >
 
-<img src="./Images/Facebook-4.png" alt="Facebook-App-Img-6" width="100%" height="300" >
+---
+
+<img src="./Images/Facebook-4.png" alt="Facebook-App-Img-6" width="600" height="300" >
 
 
 ### **Step 6. Acquire Test App Credentials**
 
-Navigate to the App Settings on the dashboard and select "Basic" under App Settings. Follow these configuration steps:
+Navigate to the **App Settings** on the dashboard and **select "Basic"** under App Settings. Follow these configuration steps:
 
 - Make the following configurations:
-  - Add "App domains" as: `http://localhost:3000`
-  - Set "Privacy Policy URL" as: `http://localhost:3000/`
-- Make a note of App ID and App Secret. This will serve as Client ID and Secret ID.
+  - Add **"App domains"** as: **`http://localhost:3000`**
+  - Set **"Privacy Policy URL"** as: **`http://localhost:3000/`**
+- **Make a note of App ID and App Secret**. This will serve as Client ID and Secret ID.
 - Save the changes on the page to ensure that your test app is configured correctly.
 
 By completing these steps, you'll have the necessary credentials for your test app, allowing you to seamlessly integrate and test Facebook authentication in your development environment.
@@ -322,13 +327,13 @@ By completing these steps, you'll have the necessary credentials for your test a
 
 </div>
 
-<!-- ![Facebook-App-Img-8](./Images/Facebook-6.png) -->
-<img src="./Images/Facebook-6.png" alt="Facebook-App-Img-8" width="100%" height="400" >
+![Facebook-App-Img-8](./Images/Facebook-6.png)
+<!-- <img src="./Images/Facebook-6.png" alt="Facebook-App-Img-8" width="600" height="500" > -->
 
 ## **Step 10: Add The Credentials Of All Next-Auth-Providers To Your Environment File**
 
 
-- Next, Create .env in the root directory And add all the credentials to it.
+- Next, **Create .env file** in the root directory And add all the credentials to it.
 
 ```jsx
    /** .env file   */
@@ -353,14 +358,14 @@ By completing these steps, you'll have the necessary credentials for your test a
 
 
    # Not providing any secret or NEXTAUTH_SECRET will throw an error in production.
-   # run this `$ openssl rand -base64 32` in your terminal and get the code
+   # run this `$ openssl rand -base64 32` in your terminal and get the code for NEXTAUTH_SECRET
 
 
    NEXTAUTH_SECRET="Next Auth Secret"
 
 ```
 
-- Next, in the src/app directory, create a new folder and name it login. In the login folder create a page.jsx file and add the following lines of code
+- Next, in the **src/app directory**, **create a new folder and name it login**. In the login folder **create a page.jsx file** and add the following lines of code
 
 ```jsx
 /** src/app/login/page.jsx   */
